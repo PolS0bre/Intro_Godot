@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://bujqnemcno0mg"]
+
+[ext_resource type="Material" uid="uid://dnppdij6t6cbm" path="res://Materials/Pink.tres" id="1_qhj18"]
+[ext_resource type="Material" uid="uid://dr2cb1ov3thtn" path="res://Materials/Blue.tres" id="1_wfrnl"]
+[ext_resource type="Material" uid="uid://3raix0ycab4f" path="res://Materials/SpriteMaterial.tres" id="2_rwvf1"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_4y75o"]
+
+[node name="BallChallenge" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+material_override = ExtResource("1_wfrnl")
+mesh = SubResource("SphereMesh_4y75o")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.957234, 0, 0.289316, 0, 1, 0, -0.289316, 0, -0.957234, 1.71752, 0, 0)
+material_override = ExtResource("2_rwvf1")
+mesh = SubResource("SphereMesh_4y75o")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.94961, 0, 0)
+material_override = ExtResource("1_qhj18")
+mesh = SubResource("SphereMesh_4y75o")

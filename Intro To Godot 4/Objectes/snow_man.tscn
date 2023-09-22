@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://csixxsqlwxugf"]
+
+[ext_resource type="Material" uid="uid://b8q4r83olnfqh" path="res://Materials/TestMaterial.tres" id="1_ve55r"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_lqrd5"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_kd3dj"]
+
+[node name="SnowMan" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+material_override = ExtResource("1_ve55r")
+mesh = SubResource("SphereMesh_lqrd5")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.420149, 0, 0, 0, 0.420149, 0, 0, 0, 0.420149, 0, 1.2208, 0)
+material_override = ExtResource("1_ve55r")
+mesh = SubResource("SphereMesh_lqrd5")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.718106, 0, 0, 0, 0.718106, 0, 0, 0, 0.718106, 0, 0.72571, 0)
+material_override = ExtResource("1_ve55r")
+mesh = SubResource("SphereMesh_lqrd5")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.13725, 0, 0, 0, 0.106167, 0, 0, 0, 0.0821348, 0, 0.815366, 0)
+material_override = ExtResource("1_ve55r")
+mesh = SubResource("BoxMesh_kd3dj")
